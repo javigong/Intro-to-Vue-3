@@ -10,7 +10,8 @@ const app = Vue.createApp({
       this.cart.push(id);
     },
     removeProduct(id) {
-      this.cart = this.cart.filter( product => product !== id)
-    }
+      const index = this.cart.indexOf(id);
+      this.cart.splice(index, 1);
+    },
   },
 });
