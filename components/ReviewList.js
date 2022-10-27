@@ -14,7 +14,7 @@ app.component("review-list", {
         <br/>
         "{{ review.review }}"
         <br/>
-        Recommend this product? {{ review.recommend }}
+        Recommended: {{ review.recommend }}
       </li>
     </ul>
   </div>
